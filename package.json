@@ -1,0 +1,22 @@
+{
+	"name": "js-minimum",
+	"version": "0.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/IPSME/example-js-minimum-client.git"
+	},
+	"scripts": {
+		"build": "webpack",
+		"clean": "del public/reflector && echo OK"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"@ipsme/reflector-ws-client": "^0.4.0"
+	},
+	"devDependencies": {
+		"copy-webpack-plugin": "^11.0.0",
+		"del-cli": "^5.0.0",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
+	}
+}
