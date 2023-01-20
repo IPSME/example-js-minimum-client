@@ -7,6 +7,7 @@
 	},
 	"scripts": {
 		"build": "webpack",
+		"serve": "http-server public",
 		"clean": "del public/reflector && echo OK"
 	},
 	"license": "ISC",
@@ -16,6 +17,7 @@
 	"devDependencies": {
 		"copy-webpack-plugin": "^11.0.0",
 		"del-cli": "^5.0.0",
+		"http-server": "^14.1.1",
 		"webpack": "^5.75.0",
 		"webpack-cli": "^5.0.1"
 	}
