@@ -7,7 +7,7 @@ This is minimum example of using IPSME in a web project in a browser environment
 
 This example makes use of the following repositories:
  - https://github.com/IPSME/npm-msgenv-broadcastchannel.git
- - https://github.com/IPSME/npm-reflector-ws-client.git
+ - https://github.com/IPSME/npm-reflector-webbr-ws.git
 
 ## Loading the reflector
 
@@ -24,7 +24,7 @@ sharedworker_reflector.load(window, "./reflector/reflector-bc-ws-client.js", fun
 ```
 Above, a SharedWorker is loaded and upon success a callback is executed which in turn publishes an announcement message. More details on loading the reflector can be found here:
 
-https://github.com/IPSME/npm-reflector-ws-client.git
+https://github.com/IPSME/npm-reflector-webbr-ws.git
 
 ## Subscribing to messages
 

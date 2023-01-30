@@ -12,7 +12,7 @@ module.exports = {
 		// https://stackoverflow.com/questions/55420795/copy-files-from-node-modules-to-dist-dir
 		new CopyWebpackPlugin({
 			patterns: [{
-				from: 'node_modules/@ipsme/reflector-ws-client/dist/reflector-bc-ws-client.js',
+				from: 'node_modules/@ipsme/reflector-webbr-ws/dist/reflector-bc-ws-client.js',
 				to: 'reflector-bc-ws-client.js'
 			}]
 		})

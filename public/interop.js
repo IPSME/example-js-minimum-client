@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'https://unpkg.com/uuid@9.0.0/dist/esm-browser/inde
 import * as IPSME_MsgEnv from 'https://unpkg.com/@ipsme/msgenv-broadcastchannel@0.3.8';
 
 // is the reflector loaded via node_modules also the same version?!
-import * as sharedworker_reflector from 'https://unpkg.com/@ipsme/reflector-ws-client@0.4.0'; 
+import * as sharedworker_reflector from 'https://unpkg.com/@ipsme/reflector-webbr-ws@0.4.4'; 
 
 //-------------------------------------------------------------------------------------------------
 
