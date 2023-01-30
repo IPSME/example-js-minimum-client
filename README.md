@@ -1,4 +1,4 @@
-# example-js-minimum-client
+# example-js-webbr-minimum
 
 This is minimum example of using IPSME in a web project in a browser environment. This example will: 1) load an IPSME reflector in the form of a SharedWorker to reflect messages to a WebSocket; 2) subscribe to IPSME messages with a callback handler `ipsme_handler_`; and, 3) publish a message to the messaging environment (ME) on a button click .
 

@@ -1,9 +1,9 @@
 {
-	"name": "js-minimum",
+	"name": "example-js-webbr-minimum",
 	"version": "0.0.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/IPSME/example-js-minimum-client.git"
+		"url": "https://github.com/IPSME/example-js-webbr-minimum.git"
 	},
 	"scripts": {
 		"build": "webpack",
