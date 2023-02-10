@@ -1,6 +1,8 @@
 # example-js-webbr-minimum
 
-This is minimum example of using IPSME in a web project in a browser environment. This example will: 1) load an IPSME reflector in the form of a SharedWorker to reflect messages to a WebSocket; 2) subscribe to IPSME messages with a callback handler `ipsme_handler_`; and, 3) publish a message to the messaging environment (ME) on a button click .
+This is minimum example of using IPSME in a web project in a browser environment. 
+
+This example will: 1) load an IPSME reflector in the form of a SharedWorker to reflect messages to a WebSocket; 2) subscribe to IPSME messages with a callback handler `ipsme_handler_`; and, 3) publish a message to the messaging environment (ME) on a button click .
 
 > ### IPSME- Idempotent Publish/Subscribe Messaging Environment
 > https://dl.acm.org/doi/abs/10.1145/3458307.3460966
@@ -8,6 +10,21 @@ This is minimum example of using IPSME in a web project in a browser environment
 This example makes use of the following repositories:
  - https://github.com/IPSME/npm-msgenv-broadcastchannel.git
  - https://github.com/IPSME/npm-reflector-webbr-ws.git
+
+## Install / Build
+```
+$ npm install
+$ npm run build
+$ npm run serve
+
+...
+Starting up http-server, ...
+...
+Available on:
+  http://127.0.0.1:8080
+...
+```
+Point your browser to the `http://localhost:8080/minimum.html`.
 
 ## Loading the reflector
 
