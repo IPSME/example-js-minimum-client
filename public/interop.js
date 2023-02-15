@@ -23,25 +23,27 @@ function ipsme_handler_json_(msg, json_msg)
 
 function ipsme_handler_string_(msg, str_msg)
 {
-	// console.log('ipsme_handler_string_: ', str_msg); 
-
-	let json_msg;
 	try {
-		json_msg= JSON.parse(str_msg);
+		let json_msg= JSON.parse(str_msg);
+		return ipsme_handler_json_(msg, json_msg);
 	}
 	catch (err) {
-		return false;
+		// do nothing ...
 	}
 
-	if (ipsme_handler_json_(msg, json_msg))
+	// console.log('ipsme_handler_string_: ', str_msg); 
+
+	if (str_msg === 'Discovery') {
+		IPSME_MsgEnv.publish('Announcement!');
 		return true;
+	}
 
 	return false;
 }
 
 function ipsme_handler_(msg) 
 {
-	console.log('ipsme_handler_: msg: ', msg); 
+	// console.log('ipsme_handler_: ', msg); 
 
 	try {
 		if (typeof(msg) === 'string' && ipsme_handler_string_(msg, msg))
@@ -54,7 +56,7 @@ function ipsme_handler_(msg)
 		console.log(e)
 	}
 	  
-	console.log("ipsme_handler_: DROP! msg: ", msg);
+	console.log("ipsme_handler_: DROP! ", msg);
 }
 
 IPSME_MsgEnv.subscribe(ipsme_handler_);
